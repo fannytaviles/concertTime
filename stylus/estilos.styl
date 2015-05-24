@@ -2,12 +2,14 @@
 @import "fonts.styl"
 
 purple_color = #662483
-gray_color = #B2B2B2
+
 orange_color = #F39200
 light_purple_color = #EACFF9
 dark_gray_color = #878787
+gray_color = #575756
 blue_color = #043D7C
-background_color = #EDEDED
+background_color = #DADADA
+menu_color = #EDEDED
 
 body
 	font-size 16px
@@ -34,7 +36,7 @@ select
 	color dark_gray_color
 span
 	cursor default
-	
+
 .footer-copyright
 	margin 0 auto
 	height 50px
@@ -53,6 +55,7 @@ span
 
 .menu
 	display block
+	text-align center
 	overflow hidden
 	border-top 1px solid gray_color
 	width 90%
@@ -100,10 +103,13 @@ span
 
 .concertsList
 	margin-top 1em
+	text-align center
 	.concert
 		width 75%
 		margin 0 auto
-		margin-bottom 5em
+		
+		margin-bottom 3em
+		display inline-block
 		.moreInfo
 			.facebookShare
 				float right
@@ -115,7 +121,6 @@ span
 				margin-top 0.75em
 				padding-left 0.5em
 				float left
-				//margin-top 0.5em
 				text-align center
 				.location-icon
 					color orange_color
@@ -134,4 +139,32 @@ span
 				text-align center
 				&:hover
 					background rgba(orange_color, 0.5)
+					
+@media screen and (min-width:480px)
+	.concert
+		&:nth-child(even)
+			margin-right 1em
+			margin-left 1em
+			width 40%
+		&:nth-child(odd)
+			width 40%
+			margin-left 1em
+			margin-right 1em
+	.topMenu	
+		border-bottom 1px solid gray_color
+		background menu_color
+		.logo
+			width 40%
+			display inline-block
+			margin-top 10px
+			vertical-align middle
+			margin-top 1em
+			margin-bottom 0.75em
+		.menu
+			width 50%
+			display inline-block
+			border-top none
+			vertical-align middle
+	.banner
+		margin-top 1em
 				

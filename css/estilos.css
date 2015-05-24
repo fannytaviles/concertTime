@@ -47,7 +47,7 @@ td,th{padding:0}
 .icon-search:before{content:"\e986"}
 .icon-circle-left:before{content:"\ea44"}
 .icon-facebook3:before{content:"\ea8e"}
-body{font-size:16px;font-family:'Lato',sans-serif;background:#ededed}
+body{font-size:16px;font-family:'Lato',sans-serif;background:#dadada}
 figure{margin:0}
 a{text-decoration:none}
 img{vertical-align:top}
@@ -55,22 +55,22 @@ ul{margin:0;padding:0}
 p{margin:0}
 select{width:100px;color:#878787}
 span{cursor:default}
-.footer-copyright{margin:0 auto;height:50px;width:90%;padding-top:2em;text-align:center;color:#b2b2b2;border-top:1px solid #b2b2b2}
+.footer-copyright{margin:0 auto;height:50px;width:90%;padding-top:2em;text-align:center;color:#575756;border-top:1px solid #575756}
 .logo{text-align:center;margin-top:2em;}
 .logo .image img{width:75%}
-.menu{display:block;overflow:hidden;border-top:1px solid #b2b2b2;width:90%;margin:0 auto;}
+.menu{display:block;text-align:center;overflow:hidden;border-top:1px solid #575756;width:90%;margin:0 auto;}
 .menu .item{list-style:none;float:right;text-align:center;}
 .menu .item a{color:#662483;padding:1em;display:block;}
 .menu .item a:hover{color:#f39200}
 .banner{text-align:center;margin-bottom:1em;}
 .banner .bannerImage img{width:95%}
-.searchModule{margin:0 auto;border-top:1px dashed #b2b2b2;border-bottom:1px dashed #b2b2b2;padding:.75em .5em .75em .5em;width:90%;}
+.searchModule{margin:0 auto;border-top:1px dashed #575756;border-bottom:1px dashed #575756;padding:.75em .5em .75em .5em;width:90%;}
 .searchModule .searchingOptions .search{position:relative;display:inline-block;margin-top:.5em;}
-.searchModule .searchingOptions .search .search-icon{position:absolute;left:.5em;top:.65em;color:#b2b2b2}
+.searchModule .searchingOptions .search .search-icon{position:absolute;left:.5em;top:.65em;color:#575756}
 .searchModule .searchingOptions .search .input{padding:.4em .25em .25em 1.9em;width:125px}
 .searchModule .searchingOptions .selectForm{margin-left:1em;display:inline-block}
-.concertsList{margin-top:1em;}
-.concertsList .concert{width:75%;margin:0 auto;margin-bottom:5em;}
+.concertsList{margin-top:1em;text-align:center;}
+.concertsList .concert{width:75%;margin:0 auto;margin-bottom:3em;display:inline-block;}
 .concertsList .concert .moreInfo .facebookShare{float:right;margin-right:.5em;font-size:1.5em;margin-top:.25em;color:#043d7c}
 .concertsList .concert .moreInfo .cityName{margin-top:.75em;padding-left:.5em;float:left;text-align:center;}
 .concertsList .concert .moreInfo .cityName .location-icon{color:#f39200}
@@ -78,3 +78,10 @@ span{cursor:default}
 .concertsList .concert .concertImage img{width:100%}
 .concertsList .concert .concertImage .info{position:absolute;bottom:0;left:0;right:0;background:rgba(234,207,249,0.3);height:25px;color:#fff;text-align:center;}
 .concertsList .concert .concertImage .info:hover{background:rgba(243,146,0,0.5)}
+@media screen and (min-width:480px){.concert:nth-child(even){margin-right:1em;margin-left:1em;width:40%}
+.concert:nth-child(odd){width:40%;margin-left:1em;margin-right:1em}
+.topMenu{border-bottom:1px solid #575756;background:#ededed;}
+.topMenu .logo{width:40%;display:inline-block;margin-top:10px;vertical-align:middle;margin-top:1em;margin-bottom:.75em}
+.topMenu .menu{width:50%;display:inline-block;border-top:none;vertical-align:middle}
+.banner{margin-top:1em}
+}
