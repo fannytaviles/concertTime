@@ -154,17 +154,46 @@ span
 		border-bottom 1px solid gray_color
 		background menu_color
 		.logo
-			width 40%
+			width 30%
 			display inline-block
-			margin-top 10px
-			vertical-align middle
+			margin-left 2em 
 			margin-top 1em
+			vertical-align middle
 			margin-bottom 0.75em
 		.menu
-			width 50%
+			width 60%
 			display inline-block
 			border-top none
 			vertical-align middle
 	.banner
 		margin-top 1em
+
+@media screen and (min-width:1000px)
+	.topMenu
+		.logo
+			width 20%
+			margin-left 3em
+		.menu
+			width 70%
 				
+	.searchModule
+		text-align center
+		.description
+			display inline-block
+			vertical-align middle
+			text-align left
+			width 45%
+		.searchingOptions
+			display inline-block
+			vertical-align middle
+			width 50%
+			
+	.concert
+		&:nth-child(even)
+			margin-right 1em
+			margin-left 1em
+			width 25%
+		&:nth-child(odd)
+			width 25%
+			margin-left 1em
+			margin-right 1em
