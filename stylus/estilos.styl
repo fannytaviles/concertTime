@@ -66,6 +66,7 @@ h1
 		
 .concertDetails
 	text-align center
+	margin-bottom 1.5em
 	.concertImageDetails
 		img
 			width 75%
@@ -97,12 +98,9 @@ h1
 			padding-bottom 0.5em
 			background rgba(blue_color, 0.85)
 			color white
-			margin-bottom 1em
 			&:hover 
 				background blue_color
 			
-	
-
 .footer-copyright
 	margin 0 auto
 	height 50px
@@ -249,7 +247,16 @@ h1
 			vertical-align middle
 	.banner
 		margin-top 1em
-
+@media screen and (min-width:650px)
+	.concertDetails
+		.concertImageDetails
+			display inline-block
+			vertical-align top
+			width 50%
+		.concertDescription
+			display inline-block
+			vertical-align top
+			width 40%
 @media screen and (min-width:1000px)
 	.topMenu
 		.logo

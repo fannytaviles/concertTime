@@ -102,7 +102,7 @@ h1{font-size:1.5em}
 .headerDetails .return a{color:#662483;}
 .headerDetails .return a:hover{color:#f39200}
 .headerDetails .artistTag{display:inline-block;height:3em;margin-left:-1.4em;overflow:hidden}
-.concertDetails{text-align:center;}
+.concertDetails{text-align:center;margin-bottom:1.5em;}
 .concertDetails .concertImageDetails img{width:75%}
 .concertDetails .concertDescription{padding-top:1em;width:90%;margin:0 auto;}
 .concertDetails .concertDescription p{text-align:left;text-indent:1.5em}
@@ -110,7 +110,7 @@ h1{font-size:1.5em}
 .concertDetails .concertDescription .moreInfo a{color:#662483;}
 .concertDetails .concertDescription .moreInfo a:hover{color:#043d7c}
 .concertDetails .concertDescription .moreInfo .infoTitle{font-weight:bold}
-.concertDetails .concertDescription .shareInFacebook{margin:0 auto;width:150px;padding-top:.5em;padding-bottom:.5em;background:rgba(4,61,124,0.85);color:#fff;margin-bottom:1em;}
+.concertDetails .concertDescription .shareInFacebook{margin:0 auto;width:150px;padding-top:.5em;padding-bottom:.5em;background:rgba(4,61,124,0.85);color:#fff;}
 .concertDetails .concertDescription .shareInFacebook:hover{background:#043d7c}
 .footer-copyright{margin:0 auto;height:50px;width:90%;padding-top:2em;text-align:center;color:#575756;border-top:1px solid #575756}
 .logo{text-align:center;margin-top:2em;}
@@ -142,6 +142,8 @@ h1{font-size:1.5em}
 .topMenu .logo{width:30%;display:inline-block;margin-left:2em;margin-top:1em;vertical-align:middle;margin-bottom:.75em}
 .topMenu .menu{width:60%;display:inline-block;border-top:none;vertical-align:middle}
 .banner{margin-top:1em}
+}@media screen and (min-width:650px){.concertDetails .concertImageDetails{display:inline-block;vertical-align:top;width:50%}
+.concertDetails .concertDescription{display:inline-block;vertical-align:top;width:40%}
 }@media screen and (min-width:1000px){.topMenu .logo{width:20%;margin-left:3em}
 .topMenu .menu{width:70%}
 .searchModule{text-align:center;}
