@@ -1,0 +1,14 @@
+[
+	{
+	 "id": "3",
+	 "artist": "Roy Aguado",
+	 "city": "Guanajuato",
+	 "date": "Sábado, 4 de Julio de 2015",
+	 "hour": "21:00",
+	 "place": "Bar Sambala",
+	 "urlInfo": "http://www.e-ticket.com",
+	 "tickets": "E-Ticket",
+	 "description": "Roy Aguado se presenta en León, Guanajuato en una session acústica con sus músicos, en el bar Sambala.",
+	 "img": "img/RoyAguadoConcert.jpg"
+	}
+]

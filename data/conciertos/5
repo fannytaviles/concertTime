@@ -1,0 +1,14 @@
+[
+	{
+	 "id": "5",
+	 "artist": "Juan Solo",
+	 "city": "San Luis Potosí",
+	 "date": "Viernes, 10 de Julio de 2015",
+	 "hour": "20:00",
+	 "place": "El Domo",
+	 "urlInfo": "http://www.ticketmaster.com.mx/juan-solo-mexico-distrito-federal-12-06-2015/event/14004E887B08203C?artistid=2110616&majorcatid=10001&minorcatid=52",
+	 "tickets": "Ticketmaster",
+	 "description": "El cantautor mexicano Juan Solo llega al Teatro Metropólitan como parte de su gira #QuítameLoSolo, la cual, dio inicio en octubre pasado y lo ha llevado a recorrer distintos lugares de la República Mexicana para presentar su primer álbum “Ni Solo, Ni Mal Acompañado”.",
+	 "img": "img/JuanSoloConcert.png"
+	}
+]

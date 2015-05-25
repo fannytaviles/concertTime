@@ -1,0 +1,14 @@
+[
+	{
+	 "id": "6",
+	 "artist": "Los Claxons",
+	 "city": "Distrito Federal",
+	 "date": "Sábado, 17 de Julio de 2015",
+	 "hour": "21:00",
+	 "place": "José Cuervo Salón",
+	 "urlInfo": "http://www.superboletos.com",
+	 "tickets": "Superboletos",
+	 "description": "Esta banda originaria de Monterrey Nuevo León comenzó en el mundo de los centros nocturnos y de la escena musical universitaria. Su popularidad local logró llamar la atención de muchos seguidores que se fueron multiplicando de tocada en tocada.",
+	 "img": "img/LosClaxonsConcert.jpg"
+	}
+]

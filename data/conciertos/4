@@ -1,0 +1,14 @@
+[
+	{
+	 "id": "4",
+	 "artist": "Paulino Monroy",
+	 "city": "Distrito Federal",
+	 "date": "Viernes, 31 de Julio de 2015",
+	 "hour": "21:00",
+	 "place": "Lunario del Auditorio Nacional",
+	 "urlInfo": "http://www.ticketmaster.com",
+	 "tickets": "Ticketmaster",
+	 "description": "Paulino Monroy ofrecerá un concierto el 31 de julio en El Lunario, donde presentará su disco de manera oficial.",
+	 "img": "img/PaulinoMonroyConcert.jpg"
+	}
+]
