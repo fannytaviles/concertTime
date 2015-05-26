@@ -23,14 +23,23 @@ var ConcertItem = Backbone.Model.extend({
 var ConcertList = Backbone.Collection.extend({
 	model: ConcertItem,
 	url: "data/conciertos.json",
-	sortField: "artist",
-	search: function(letters)
+	sortField: 'city',
+	comparator: function(concert1)
+	{
+		return concert1.get(this.sortField);
+	},
+	search: function(letters, field)
 	{
 		if(letters === "") return this;
 		var pattern = new RegExp(letters,'i');
 		var filteredList = this.filter(function(data)
 		{
-			return (pattern.test( data.get('artist') + "  "+data.get('city') ));
+			if (field === 'artist')
+			{
+				return pattern.test(data.get('artist'));
+			}else{
+				return pattern.test(data.get('city'));
+			}
 		});
 		var coll = new ConcertList(filteredList);
 		return coll;

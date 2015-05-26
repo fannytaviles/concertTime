@@ -56,9 +56,9 @@ var App = new (Backbone.Router.extend({
   {
     this.filter = filter;
     var field = this.activeList.sortField;
-    this.activeList = this.ConcertsList.search(this.filter);
-    console.log(this.ConcertsList.search(this.filter))
+    this.activeList = this.ConcertsList.search(this.filter, field);
     this.activeList.sortField = field;
+    this.activeList.sort();
     var concertsView = new ConcertListaView({collection: this.activeList });
     concertsView.render();
     $('#concertListContainer').html(concertsView.el);

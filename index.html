@@ -126,10 +126,10 @@
 						<span class="icon-search search-icon"></span>
 						<input onKeyUp='onConcertFilter()' value='<%= filter %>' type="text" placeholder="Artista o Ciudad" class="input" id="inputConcert">		
 					</div>
-					<div class="selectForm" onChange="onChangeSortOrder()" id="sortField">
-						<select>
+					<div class="selectForm">
+						<select onChange="onChangeSortOrder()" id="sortField">
 							<option <% if(sortField === "artist"){ %> selected <% } %> value="artist">Artista</option>
-							<option <% if(sortField === "Ciudad"){ %> selected <% } %> value="city">Ciudad</option>
+							<option <% if(sortField === "city"){ %> selected <% } %> value="city">Ciudad</option>
 						</select>
 					</div>
 				</div>
