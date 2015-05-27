@@ -14,6 +14,16 @@
 	    <script src="src/app.js"></script>
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=701027710023484";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<header>
 			<div class="topMenu">
 				<div class="logo">
@@ -61,12 +71,11 @@
 				</a>
 				<div class="moreInfo">
 					<div class="cityName">
-						<span class="icon-location2 location-icon">&nbsp</span>
+						<span class="icon-location2 location-icon"></span>
 						<span> <%= city %></span>	
 					</div>
-					<div class="facebookShare">
-						<span class="icon-facebook3"></span>
-					</div>	
+					<div class="fb-share-button facebookShare" data-href="http://concerttime.ml/" data-layout="button_count">
+					</div>
 				</div>	
 			</article>	
 		</script>
@@ -108,9 +117,7 @@
 							<span class="infoTitle">Boletos:</span> 
 							<a href='<%= urlInfo %>'><%= tickets %></a>
 						</div>
-						<div class="shareInFacebook">
-							<span>Compartir&nbsp</span>
-							<span class="icon-facebook3"></span>
+						<div class="fb-share-button shareInFacebook" data-href="http://concertTime.ml" data-layout="button_count">
 						</div>
 					</div>
 				</div>
@@ -225,9 +232,7 @@
 				{
 					App.filterBy($('#inputConcert').val());
 				}
-
 			});
 		</script>
 	</body>
-	
 </html>

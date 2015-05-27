@@ -24,9 +24,9 @@ var ConcertList = Backbone.Collection.extend({
 	model: ConcertItem,
 	url: "data/conciertos.json",
 	sortField: 'city',
-	comparator: function(concert1)
+	comparator: function(concertInfo)
 	{
-		return concert1.get(this.sortField);
+		return concertInfo.get(this.sortField);
 	},
 	search: function(letters, field)
 	{

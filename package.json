@@ -1,0 +1,26 @@
+{
+  "name": "concertTime",
+  "version": "0.0.0",
+  "description": "Mini Web App Responsive - BackboneJS / Stylus / Gulp",
+  "main": "GulpFile.js",
+  "dependencies": {
+    "gulp-stylus": "~2.0.2"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "nib": "~1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fannytaviles/concertTime.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/fannytaviles/concertTime/issues"
+  },
+  "homepage": "https://github.com/fannytaviles/concertTime"
+}
