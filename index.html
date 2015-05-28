@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta property="og:description" content="¿Tu grupo favorito visitó tu ciudad y no te enteraste? ¡Qué no te vuelva a pasar! Busca tu localidad o artista preferido."/>
+		<meta property="og:image" content="http://fannytaviles.com/concertTime/img/concertFb.jpg" />
 		<title>Concert Time - Todos los conciertos en tu ciudad</title>
 	    <link href="css/estilos.css" rel="stylesheet" media="screen">
 	    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -14,16 +16,6 @@
 	    <script src="src/app.js"></script>
 	</head>
 	<body>
-		<div id="fb-root"></div>
-		<script>
-			(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=701027710023484";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
 		<header>
 			<div class="topMenu">
 				<div class="logo">
@@ -46,6 +38,14 @@
 				<figure class="bannerImage">
 					<img src="img/concertImage.jpg" alt="ConcertTime"/>
 				</figure>
+			</div>
+			<div class="socialButtons">
+				<div id="fb-root" class="fb-root">
+					<div class="fb-share-button" data-href="http://www.fannytaviles.com/concertTime/index.html" data-layout="button_count"></div>
+				</div>
+				<div class="tw-root">
+					<a href="https://twitter.com/fannytaviles" class="twitter-follow-button" data-lang="es" data-show-screen-name="false"></a>
+				</div>
 			</div>
 		</header>
 		<section id="searchModuleSection">
@@ -73,8 +73,6 @@
 					<div class="cityName">
 						<span class="icon-location2 location-icon"></span>
 						<span> <%= city %></span>	
-					</div>
-					<div class="fb-share-button facebookShare" data-href="http://concerttime.ml/" data-layout="button_count">
 					</div>
 				</div>	
 			</article>	
@@ -117,8 +115,10 @@
 							<span class="infoTitle">Boletos:</span> 
 							<a href='<%= urlInfo %>'><%= tickets %></a>
 						</div>
-						<div class="fb-share-button shareInFacebook" data-href="http://concertTime.ml" data-layout="button_count">
-						</div>
+					</div>
+					<div class="maps">
+						<iframe width="100%" height="250" frameborder="0" style="border:0" src='<%= mapSrc %>'>
+						</iframe>
 					</div>
 				</div>
 			</div>
@@ -142,6 +142,17 @@
 				</div>
 			</div>
 		</script>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=701027710023484";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+		</script>
 		<script type="text/javascript">
 			$(function(){ 
 				var init = {
@@ -157,6 +168,7 @@
 						 "place": "Teatro Metropólitan",
 						 "urlInfo": "http://www.ticketmaster.com.mx/juan-solo-mexico-distrito-federal-12-06-2015/event/14004E887B08203C?artistid=2110616&majorcatid=10001&minorcatid=52",
 						 "tickets": "Ticketmaster",
+						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=Teatro%20Metrop%C3%B3litan%2C%20Centro%2C%20Ciudad%20de%20M%C3%A9xico%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "2",
@@ -169,6 +181,7 @@
 						 "place": "Plaza de Toros",
 						 "urlInfo": "http://www.superboletos.com",
 						 "tickets": "Superboletos",
+						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=El%20Domo%20Centro%20de%20Espect%C3%A1culos%20de%20San%20Luis%20Potos%C3%AD%2C%20Sat%C3%A9lite%20Francisco%20I.%20Madero%202%20(23)%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "3",
@@ -181,6 +194,7 @@
 						 "place": "Bar Sambala",
 						 "urlInfo": "http://www.e-ticket.com",
 						 "tickets": "E-Ticket",
+						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=Le%C3%B3n%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "4",
@@ -193,6 +207,7 @@
 						 "place": "Lunario del Auditorio Nacional",
 						 "urlInfo": "http://www.ticketmaster.com",
 						 "tickets": "Ticketmaster",
+						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=lunario%20auditorio%20nacional&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "5",
@@ -205,6 +220,7 @@
 						 "place": "El Domo",
 						 "urlInfo": "http://www.ticketmaster.com.mx/juan-solo-mexico-distrito-federal-12-06-2015/event/14004E887B08203C?artistid=2110616&majorcatid=10001&minorcatid=52",
 						 "tickets": "Ticketmaster",
+						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=El%20Domo%20Centro%20de%20Espect%C3%A1culos%20de%20San%20Luis%20Potos%C3%AD%2C%20Sat%C3%A9lite%20Francisco%20I.%20Madero%202%20(23)%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "6",
@@ -217,6 +233,7 @@
 						 "place": "José Cuervo Salón",
 						 "urlInfo": "http://www.superboletos.com",
 						 "tickets": "Superboletos",
+						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=Jos%C3%A9%20Cuervo%20Sal%C3%B3n%2C%20Granada%2C%20Ciudad%20de%20M%C3%A9xico%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 					]
 				};

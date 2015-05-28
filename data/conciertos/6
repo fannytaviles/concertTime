@@ -9,6 +9,7 @@
 	 "urlInfo": "http://www.superboletos.com",
 	 "tickets": "Superboletos",
 	 "description": "Esta banda originaria de Monterrey Nuevo León comenzó en el mundo de los centros nocturnos y de la escena musical universitaria. Su popularidad local logró llamar la atención de muchos seguidores que se fueron multiplicando de tocada en tocada.",
-	 "img": "img/LosClaxonsConcert.jpg"
+	 "img": "img/LosClaxonsConcert.jpg",
+	 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=Jos%C3%A9%20Cuervo%20Sal%C3%B3n%2C%20Granada%2C%20Ciudad%20de%20M%C3%A9xico%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 	}
 ]

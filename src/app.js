@@ -24,7 +24,6 @@ var App = new (Backbone.Router.extend({
   index: function(){
     if(!this.activeList)
       this.activeList = new ConcertList(this.ConcertsList.models);
-
     var concertsView = new ConcertListaView({collection: this.activeList});
     $('#concertDetails').empty();
     $('#concertListContainer').addClass('fadeIn');

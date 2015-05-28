@@ -7,11 +7,7 @@ ConcertView = Backbone.View.extend({
 
 	render: function()
 	{
-		FB.init({
-	      appId      : '701027710023484',
-	      xfbml      : true,
-	      version    : 'v2.3'
-	    });
+
 		this.$el.html(_.template($('#itemConcertTemplate').html(),this.model.attributes));
 	}
 });
@@ -24,11 +20,7 @@ ConcertInfoView = Backbone.View.extend({
 
 	render: function()
 	{
-		FB.init({
-	      appId      : '701027710023484',
-	      xfbml      : true,
-	      version    : 'v2.3'
-	    });
+	   
 		this.$el.html(_.template($('#detailsTemplate').html(),this.model.attributes));
 	}
 });

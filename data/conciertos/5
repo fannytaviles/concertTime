@@ -9,6 +9,7 @@
 	 "urlInfo": "http://www.ticketmaster.com.mx/juan-solo-mexico-distrito-federal-12-06-2015/event/14004E887B08203C?artistid=2110616&majorcatid=10001&minorcatid=52",
 	 "tickets": "Ticketmaster",
 	 "description": "El cantautor mexicano Juan Solo llega al Teatro Metropólitan como parte de su gira #QuítameLoSolo, la cual, dio inicio en octubre pasado y lo ha llevado a recorrer distintos lugares de la República Mexicana para presentar su primer álbum “Ni Solo, Ni Mal Acompañado”.",
-	 "img": "img/JuanSoloConcert.png"
+	 "img": "img/JuanSoloConcert.png",
+	 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=El%20Domo%20Centro%20de%20Espect%C3%A1culos%20de%20San%20Luis%20Potos%C3%AD%2C%20Sat%C3%A9lite%20Francisco%20I.%20Madero%202%20(23)%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 	}
 ]

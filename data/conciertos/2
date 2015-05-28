@@ -9,6 +9,7 @@
 	 "urlInfo": "http://www.superboletos.com",
 	 "tickets": "Superboletos",
 	 "description": "Esta banda originaria de Monterrey Nuevo León comenzó en el mundo de los centros nocturnos y de la escena musical universitaria. Su popularidad local logró llamar la atención de muchos seguidores que se fueron multiplicando de tocada en tocada.",
-	 "img": "img/LosClaxonsConcert.jpg"
+	 "img": "img/LosClaxonsConcert.jpg",
+	 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=El%20Domo%20Centro%20de%20Espect%C3%A1culos%20de%20San%20Luis%20Potos%C3%AD%2C%20Sat%C3%A9lite%20Francisco%20I.%20Madero%202%20(23)%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 	}
 ]

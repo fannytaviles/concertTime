@@ -9,6 +9,7 @@
 	 "urlInfo": "http://www.ticketmaster.com",
 	 "tickets": "Ticketmaster",
 	 "description": "Paulino Monroy ofrecerá un concierto el 31 de julio en El Lunario, donde presentará su disco de manera oficial.",
-	 "img": "img/PaulinoMonroyConcert.jpg"
+	 "img": "img/PaulinoMonroyConcert.jpg",
+	 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=lunario%20auditorio%20nacional&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 	}
 ]

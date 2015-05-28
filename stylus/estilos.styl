@@ -39,7 +39,9 @@ span
 	cursor default
 h1
 	font-size 1.5em
-	
+
+.details
+	clear both
 .fadeIn
 	animation 3s fadeInTransition 1
 	
@@ -71,10 +73,10 @@ h1
 	text-align center
 	margin-bottom 1.5em
 	.concertImageDetails
+		padding-bottom 1em
 		img
 			width 75%
 	.concertDescription
-		padding-top 1em
 		width 90%
 		margin 0 auto
 		p
@@ -94,12 +96,20 @@ h1
 					color: blue_color
 			.infoTitle
 				font-weight bold
-		.shareInFacebook
-			margin 0 auto
-			width 150px
-			padding-top 0.5em
-			padding-bottom 0.5em
-			
+	.maps
+		margin 0 auto
+		width 90%
+		padding-top 0.5em
+		padding-bottom 0.5em
+
+.socialButtons
+	float right
+	margin-bottom 1em
+	margin-right 1.5em
+	.fb-root,
+	.tw-root
+		display inline-block
+	
 .footer-copyright
 	margin 0 auto
 	height 50px
@@ -147,6 +157,7 @@ h1
 	border-bottom 1px dashed gray_color
 	padding 0.75em 0.5em 0.75em 0.5em
 	width 90%
+	clear both
 	.searchingOptions
 		.search
 			position relative
@@ -176,10 +187,6 @@ h1
 		margin-bottom 3em
 		display inline-block
 		.moreInfo
-			.facebookShare
-				float right
-				margin-right 0.5em
-				margin-top 0.125em
 			.cityName
 				margin-top 0.75em
 				padding-left 0.5em
@@ -255,6 +262,8 @@ h1
 			display inline-block
 			vertical-align top
 			width 40%
+		.maps
+			width 90%
 @media screen and (min-width:1000px)
 	.topMenu
 		.logo
@@ -285,3 +294,14 @@ h1
 			width 25%
 			margin-left 1em
 			margin-right 1em
+	.concertDetails
+		.concertImageDetails,
+		.concertDescription,
+		.maps
+			float left			
+		.maps
+			width 40%
+	.footer-copyright
+		clear both
+	
+		

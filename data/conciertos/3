@@ -9,6 +9,7 @@
 	 "urlInfo": "http://www.e-ticket.com",
 	 "tickets": "E-Ticket",
 	 "description": "Roy Aguado se presenta en León, Guanajuato en una session acústica con sus músicos, en el bar Sambala.",
-	 "img": "img/RoyAguadoConcert.jpg"
+	 "img": "img/RoyAguadoConcert.jpg",
+	 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=Le%C3%B3n%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 	}
 ]
