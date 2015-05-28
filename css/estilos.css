@@ -402,39 +402,47 @@ th {
 .icon-facebook3:before {
   content: "\ea8e";
 }
+a {
+  text-decoration: none;
+}
 body {
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
   background: #dadada;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 figure {
   margin: 0;
 }
-a {
-  text-decoration: none;
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
 }
 img {
   vertical-align: top;
-}
-ul {
-  margin: 0;
-  padding: 0;
 }
 p {
   margin: 0;
 }
 select {
-  width: 100px;
   color: #878787;
+  width: 100px;
 }
 span {
   cursor: default;
 }
-h1 {
-  font-size: 1.5em;
+ul {
+  margin: 0;
+  padding: 0;
 }
-.details {
-  clear: both;
+.banner {
+  margin-bottom: 1em;
+  text-align: center;
+}
+.banner .bannerImage img {
+  width: 95%;
 }
 .fadeIn {
   -webkit-animation: 3s fadeInTransition 1;
@@ -442,77 +450,42 @@ h1 {
   -ms-animation: 3s fadeInTransition 1;
   -moz-animation: 3s fadeInTransition 1;
 }
-.headerDetails {
-  border-bottom: 1px dashed #575756;
-  border-top: 1px dashed #575756;
-  width: 90%;
-  text-align: center;
+.footer-copyright {
+  border-top: 1px solid #575756;
+  color: #575756;
+  height: 50px;
   margin: 0 auto;
-  margin-bottom: 1.5em;
-  padding-bottom: 1em;
-  padding-top: 0.5em;
-}
-.headerDetails .return {
-  display: inline-block;
-  float: left;
-  font-size: 1.5em;
-}
-.headerDetails .return a {
-  color: #662483;
-}
-.headerDetails .return a:hover {
-  color: #f39200;
-}
-.headerDetails .artistTag {
-  display: inline-block;
-  height: 3em;
-  margin-left: -1.4em;
-  overflow: hidden;
-}
-.concertDetails {
+  padding-top: 2em;
   text-align: center;
-  margin-bottom: 1.5em;
+  width: 90%;
 }
-.concertDetails .concertImageDetails {
-  padding-bottom: 1em;
+.logo {
+  margin-top: 2em;
+  text-align: center;
 }
-.concertDetails .concertImageDetails img {
+.logo .image img {
   width: 75%;
 }
-.concertDetails .concertDescription {
-  width: 90%;
+.menu {
+  border-top: 1px solid #575756;
+  display: block;
   margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  width: 90%;
 }
-.concertDetails .concertDescription p {
-  text-align: left;
-  text-indent: 1.5em;
+.menu .item {
+  float: right;
+  list-style: none;
+  text-align: center;
 }
-.concertDetails .concertDescription .moreInfo {
-  -webkit-animation: 1s fadeInTransition 1;
-  -o-animation: 1s fadeInTransition 1;
-  -ms-animation: 1s fadeInTransition 1;
-  -moz-animation: 1s fadeInTransition 1;
-  background: rgba(102,36,131,0.35);
-  -webkit-border-radius: 5px;
-  margin-top: 0.75em;
-  padding: 0.75em;
-  text-align: left;
-  margin-bottom: 1em;
-}
-.concertDetails .concertDescription .moreInfo a {
+.menu .item a {
   color: #662483;
+  display: block;
+  padding: 1em;
 }
-.concertDetails .concertDescription .moreInfo a:hover {
-  color: #043d7c;
-}
-.concertDetails .concertDescription .moreInfo .infoTitle {
-  font-weight: bold;
-}
-.concertDetails .maps {
-  margin: 0 auto;
-  width: 90%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+.menu .item a:hover {
+  color: #f39200;
 }
 .socialButtons {
   float: right;
@@ -523,94 +496,102 @@ h1 {
 .socialButtons .tw-root {
   display: inline-block;
 }
-.footer-copyright {
+.idx {
+  clear: both;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.idx .appDescription {
+  border-top: 1px dashed #575756;
   margin: 0 auto;
-  height: 50px;
+  padding-bottom: 1em;
   width: 90%;
-  padding-top: 2em;
-  text-align: center;
-  color: #575756;
-  border-top: 1px solid #575756;
 }
-.logo {
-  text-align: center;
-  margin-top: 2em;
-}
-.logo .image img {
-  width: 75%;
-}
-.menu {
-  display: block;
-  text-align: center;
-  overflow: hidden;
-  border-top: 1px solid #575756;
-  width: 90%;
+.idx .appDescription .goConcertTime {
+  background: #662483;
+  -webkit-border-radius: 5px;
+  color: #fff;
   margin: 0 auto;
+  padding: 0.5em;
+  width: 50%;
 }
-.menu .item {
-  list-style: none;
-  float: right;
+.idx .appDescription .goConcertTime:hover {
+  background: #f39200;
+}
+.idx .appProcess {
+  background: rgba(102,36,131,0.5);
+  margin-top: 1em;
+  padding-top: 3em;
+  width: 100%;
+}
+.idx .appProcess .steps {
+  -webkit-animation: 3s scaleTransition 1;
+  -o-animation: 3s scaleTransition 1;
+  -ms-animation: 3s scaleTransition 1;
+  -moz-animation: 3s scaleTransition 1;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  width: 50%;
+}
+.idx .appProcess .steps .imageStep {
+  position: relative;
+}
+.idx .appProcess .steps .imageStep img {
+  width: 100%;
+}
+.idx .appProcess .steps .stepInfo {
+  color: #fff;
+  font-size: 1.25em;
+  margin-top: 0.75em;
+  padding-left: 0.5em;
   text-align: center;
-}
-.menu .item a {
-  color: #662483;
-  padding: 1em;
-  display: block;
-}
-.menu .item a:hover {
-  color: #f39200;
-}
-.banner {
-  text-align: center;
-  margin-bottom: 1em;
-}
-.banner .bannerImage img {
-  width: 95%;
 }
 .searchModule {
-  margin: 0 auto;
-  border-top: 1px dashed #575756;
   border-bottom: 1px dashed #575756;
+  border-top: 1px dashed #575756;
+  clear: both;
+  margin: 0 auto;
   padding: 0.75em 0.5em 0.75em 0.5em;
   width: 90%;
-  clear: both;
 }
 .searchModule .searchingOptions .search {
-  position: relative;
   display: inline-block;
   margin-top: 0.5em;
+  position: relative;
 }
 .searchModule .searchingOptions .search .search-icon {
-  position: absolute;
-  left: 0.5em;
-  top: 0.65em;
   color: #575756;
+  left: 0.5em;
+  position: absolute;
+  top: 0.65em;
 }
 .searchModule .searchingOptions .search .input {
   padding: 0.4em 0.25em 0.25em 1.9em;
   width: 125px;
 }
 .searchModule .searchingOptions .selectForm {
-  margin-left: 1em;
   display: inline-block;
+  margin-left: 1em;
 }
 .location-icon {
   color: #f39200;
 }
 .concertsList {
+  margin-bottom: 1em;
   margin-top: 1em;
   text-align: center;
 }
 .concertsList .concert {
-  width: 65%;
+  display: inline-block;
   margin: 0 auto;
   margin-bottom: 3em;
-  display: inline-block;
+  width: 65%;
 }
 .concertsList .concert .moreInfo .cityName {
+  float: left;
   margin-top: 0.75em;
   padding-left: 0.5em;
-  float: left;
   text-align: center;
 }
 .concertsList .concert .concertImage {
@@ -626,52 +607,143 @@ h1 {
   width: 100%;
 }
 .concertsList .concert .concertImage .info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: rgba(234,207,249,0.3);
-  height: 25px;
+  bottom: 0;
   color: #fff;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  right: 0;
   text-align: center;
 }
 .concertsList .concert .concertImage .info:hover {
   background: rgba(243,146,0,0.5);
 }
+.details {
+  clear: both;
+}
+.headerDetails {
+  border-bottom: 1px dashed #575756;
+  border-top: 1px dashed #575756;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+  text-align: center;
+  width: 90%;
+}
+.headerDetails .artistTag {
+  display: inline-block;
+  height: 3em;
+  margin-left: -1.4em;
+  overflow: hidden;
+}
+.headerDetails .return {
+  display: inline-block;
+  float: left;
+  font-size: 1.5em;
+}
+.headerDetails .return a {
+  color: #662483;
+}
+.headerDetails .return a:hover {
+  color: #f39200;
+}
+.concertDetails {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.concertDetails .concertImageDetails {
+  padding-bottom: 1em;
+}
+.concertDetails .concertImageDetails img {
+  width: 75%;
+}
+.concertDetails .concertDescription {
+  margin: 0 auto;
+  width: 90%;
+}
+.concertDetails .concertDescription p {
+  text-align: left;
+  text-indent: 1.5em;
+}
+.concertDetails .concertDescription .moreInfo {
+  -webkit-animation: 1s fadeInTransition 1;
+  -o-animation: 1s fadeInTransition 1;
+  -ms-animation: 1s fadeInTransition 1;
+  -moz-animation: 1s fadeInTransition 1;
+  background: rgba(102,36,131,0.35);
+  -webkit-border-radius: 5px;
+  margin-bottom: 1em;
+  margin-top: 0.75em;
+  padding: 0.75em;
+  text-align: left;
+}
+.concertDetails .concertDescription .moreInfo a {
+  color: #662483;
+}
+.concertDetails .concertDescription .moreInfo a:hover {
+  color: #043d7c;
+}
+.concertDetails .concertDescription .moreInfo .infoTitle {
+  font-weight: bold;
+}
+.concertDetails .maps {
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  width: 90%;
+}
 @media screen and (min-width: 480px) {
-  .concert:nth-child(even) {
-    margin-right: 1.5em;
-    margin-left: 1.5em;
-    width: 38%;
-  }
-  .concert:nth-child(odd) {
-    width: 38%;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-  }
   .topMenu {
-    border-bottom: 1px solid #575756;
     background: #ededed;
+    border-bottom: 1px solid #575756;
   }
   .topMenu .logo {
-    width: 30%;
     display: inline-block;
+    margin-bottom: 0.75em;
     margin-left: 2em;
     margin-top: 1em;
     vertical-align: middle;
-    margin-bottom: 0.75em;
+    width: 30%;
   }
   .topMenu .menu {
-    width: 60%;
-    display: inline-block;
     border-top: none;
+    display: inline-block;
     vertical-align: middle;
+    width: 60%;
   }
   .banner {
     margin-top: 1em;
   }
+  .idx .appDescription h2 {
+    margin: 0 auto;
+    padding-bottom: 1em;
+    width: 70%;
+  }
+  .idx .appDescription .goConcertTime {
+    width: 30%;
+  }
+  .idx .appProcess .steps {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    width: 39%;
+  }
+  .concert:nth-child(even) {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    width: 38%;
+  }
+  .concert:nth-child(odd) {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    width: 38%;
+  }
 }
 @media screen and (min-width: 650px) {
+  .idx .appProcess .steps {
+    width: 30%;
+  }
   .concertDetails .concertImageDetails {
     display: inline-block;
     vertical-align: top;
@@ -687,21 +759,26 @@ h1 {
   }
 }
 @media screen and (min-width: 1000px) {
-  .topMenu .logo {
+  .idx .appProcess .steps {
+    margin-left: 1em;
+    margin-right: 1em;
     width: 20%;
+  }
+  .topMenu .logo {
     margin-left: 3em;
+    width: 20%;
   }
   .topMenu .menu {
-    width: 70%;
     font-size: 1.25em;
+    width: 70%;
   }
   .searchModule {
     text-align: center;
   }
   .searchModule .description {
     display: inline-block;
-    vertical-align: middle;
     text-align: left;
+    vertical-align: middle;
     width: 45%;
   }
   .searchModule .searchingOptions {
@@ -710,14 +787,14 @@ h1 {
     width: 50%;
   }
   .concert:nth-child(even) {
-    margin-right: 1em;
     margin-left: 1em;
+    margin-right: 1em;
     width: 25%;
   }
   .concert:nth-child(odd) {
-    width: 25%;
     margin-left: 1em;
     margin-right: 1em;
+    width: 25%;
   }
   .concertDetails .concertImageDetails,
   .concertDetails .concertDescription,
@@ -851,6 +928,62 @@ h1 {
     -o-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -moz-transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+@-moz-keyframes scaleTransition {
+  0% {
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleTransition {
+  0% {
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+@-o-keyframes scaleTransition {
+  0% {
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+@keyframes scaleTransition {
+  0% {
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
   }
   100% {
     -webkit-transform: scale(1);

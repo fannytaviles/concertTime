@@ -7,7 +7,6 @@ ConcertView = Backbone.View.extend({
 
 	render: function()
 	{
-
 		this.$el.html(_.template($('#itemConcertTemplate').html(),this.model.attributes));
 	}
 });
@@ -20,16 +19,27 @@ ConcertInfoView = Backbone.View.extend({
 
 	render: function()
 	{
-	   
 		this.$el.html(_.template($('#detailsTemplate').html(),this.model.attributes));
+	}
+});
+
+ConcertIndexView = Backbone.View.extend({
+	initialize: function()
+	{
+		this.render();
+	},
+
+	render: function()
+	{
+		this.$el.html(_.template($('#indexTemplate').html(),{}));
 	}
 });
 
 ConcertListaView = Backbone.View.extend({
 	tagName: "span",
+	className: "concertViewList",
 	initialize: function()
 	{
-		
 		this.listenTo(this.collection, "reset", this.render);
 		this.listenTo(this.collection, "sort", this.render);
 	},

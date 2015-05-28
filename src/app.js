@@ -1,7 +1,8 @@
 var App = new (Backbone.Router.extend({
   routes: {
     "concierto/:id": "show",
-    "conciertos(/)": "index",
+    "conciertos(/)": "showConcerts",
+    "index(/)": "index",
     "*any" : "redirect"
      },
 
@@ -18,14 +19,16 @@ var App = new (Backbone.Router.extend({
 
   redirect: function()
   {
-    this.navigate("conciertos/",true);
+    this.navigate("index/",true);
   },
 
-  index: function(){
+  showConcerts: function()
+  {
     if(!this.activeList)
       this.activeList = new ConcertList(this.ConcertsList.models);
     var concertsView = new ConcertListaView({collection: this.activeList});
     $('#concertDetails').empty();
+    $('#indexContainer').empty();
     $('#concertListContainer').addClass('fadeIn');
     $('#searchModuleSection').html(_.template($('#searchingTemplate').html(),
       { filter: _.escape(this.filter), sortField: this.activeList.sortField }
@@ -34,11 +37,21 @@ var App = new (Backbone.Router.extend({
     concertsView.render();
   },
 
+  index: function(){
+    var concertIndexView = new ConcertIndexView();
+    $('#concertListContainer').removeClass('fadeIn');
+    $('#searchModuleSection').empty();
+    $('#concertListContainer').empty();
+    $('#concertDetails').empty();
+    $('#indexContainer').html(concertIndexView.el);
+  },
+
   show: function(id)
   {
     var concert = new ConcertItem({id: id});
     var concertView = new ConcertInfoView({model: concert});
     $('#concertListContainer').removeClass('fadeIn');
+    $('#indexContainer').empty();
     $('#searchModuleSection').empty();
     $('#concertListContainer').empty();
     $('#concertDetails').html(concertView.el);
@@ -61,6 +74,7 @@ var App = new (Backbone.Router.extend({
     var concertsView = new ConcertListaView({collection: this.activeList });
     concertsView.render();
     $('#concertListContainer').html(concertsView.el);
+    $('.concertViewList:empty').text("No se encontraron resultados");
   }
 
 }))();

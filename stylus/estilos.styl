@@ -11,97 +11,86 @@ gray_color = #575756
 blue_color = #043D7C
 background_color = #DADADA
 menu_color = #EDEDED
+
+a
+	text-decoration none
 		
 body
-	font-size 16px
-	font-family 'Lato', sans-serif
 	background background_color
+	font-family 'Lato', sans-serif
+	font-size 16px
 	
 figure
 	margin 0
 
-a
-	text-decoration none
+h1
+	font-size 1.5em
+	
+h2
+	font-size 1.2em
+	font-weight normal
 	
 img
 	vertical-align top
-	
-ul
-	margin 0
-	padding 0
+
 p
 	margin 0
 	
 select 
-	width 100px
 	color dark_gray_color
+	width 100px
+	
 span
-	cursor default
-h1
-	font-size 1.5em
+	cursor default	
+	
+ul
+	margin 0
+	padding 0
 
-.details
-	clear both
+.banner
+	margin-bottom 1em
+	text-align center
+	.bannerImage
+		img
+			width 95%
+				
 .fadeIn
 	animation 3s fadeInTransition 1
 	
-.headerDetails
-	border-bottom 1px dashed gray_color
-	border-top 1px dashed gray_color
-	width 90%
-	text-align center
+.footer-copyright
+	border-top 1px solid gray_color
+	color gray_color
+	height 50px
 	margin 0 auto
-	margin-bottom 1.5em
-	padding-bottom 1em
-	padding-top 0.5em
-	.return
-		display inline-block
-		float left
-		font-size 1.5em
-		a
-			color purple_color
-			&:hover
-				color orange_color
-			
-	.artistTag
-		display inline-block
-		height 3em
-		margin-left -1.4em
-		overflow hidden
-		
-.concertDetails
+	padding-top 2em
 	text-align center
-	margin-bottom 1.5em
-	.concertImageDetails
-		padding-bottom 1em
+	width 90%
+	
+.logo
+	margin-top 2em
+	text-align center
+	.image
 		img
 			width 75%
-	.concertDescription
-		width 90%
-		margin 0 auto
-		p
-			text-align left
-			text-indent 1.5em
-		.moreInfo	
-			animation 1s fadeInTransition 1
-			background rgba(purple_color, 0.35)
-			border-radius 5px
-			margin-top 0.75em
-			padding 0.75em
-			text-align left
-			margin-bottom 1em
-			a
-				color purple_color
-				&:hover
-					color: blue_color
-			.infoTitle
-				font-weight bold
-	.maps
-		margin 0 auto
-		width 90%
-		padding-top 0.5em
-		padding-bottom 0.5em
 
+.menu
+	border-top 1px solid gray_color
+	display block
+	margin 0 auto
+	overflow hidden
+	text-align center
+	width 90%
+	.item
+		float right
+		list-style none
+		text-align center
+		a
+			color purple_color
+			display block
+			padding 1em
+			&:hover
+				color orange_color
+	
 .socialButtons
 	float right
 	margin-bottom 1em
@@ -109,88 +98,89 @@ h1
 	.fb-root,
 	.tw-root
 		display inline-block
-	
-.footer-copyright
-	margin 0 auto
-	height 50px
-	width 90%
-	padding-top 2em
-	text-align center
-	color gray_color
-	border-top 1px solid gray_color
-	
-.logo
-	text-align center
-	margin-top 2em
-	.image
-		img
-			width 75%
+			
 
-.menu
-	display block
+.idx
+	clear both
+	margin-bottom 2em
 	text-align center
-	overflow hidden
-	border-top 1px solid gray_color
-	width 90%
-	margin 0 auto
-	.item
-		list-style none
-		float right
-		text-align center
-		a
-			color purple_color
-			padding 1em
-			display block
+	.appDescription
+		border-top 1px dashed gray_color
+		margin 0 auto
+		padding-bottom 1em
+		width 90%
+		.goConcertTime
+			background purple_color
+			border-radius 5px
+			color white
+			margin 0 auto
+			padding 0.5em
+			width 50%
 			&:hover
-				color orange_color
-				
-.banner
-	text-align center
-	margin-bottom 1em
-	.bannerImage
-		img
-			width 95%
+				background orange_color
+	.appProcess
+		background rgba(purple_color, 0.5)
+		margin-top 1em
+		padding-top 3em
+		width 100%
+		.steps
+			animation 3s scaleTransition 1
+			display inline-block
+			margin 0 auto
+			margin-bottom 3em
+			width 50%
+			.imageStep
+				position relative
+				img
+					width 100%
+			.stepInfo
+				color white
+				font-size 1.25em
+				margin-top 0.75em
+				padding-left 0.5em
+				text-align center
+
 		
 .searchModule
-	margin 0 auto
-	border-top 1px dashed gray_color
 	border-bottom 1px dashed gray_color
+	border-top 1px dashed gray_color
+	clear both
+	margin 0 auto
 	padding 0.75em 0.5em 0.75em 0.5em
 	width 90%
-	clear both
 	.searchingOptions
 		.search
-			position relative
 			display inline-block
 			margin-top 0.5em
+			position relative
 			.search-icon
-				position absolute
-				left 0.5em
-				top 0.65em
 				color gray_color
+				left 0.5em
+				position absolute
+				top 0.65em
 			.input
 				padding 0.4em 0.25em 0.25em 1.9em
 				width 125px
 		.selectForm
-			margin-left 1em
 			display inline-block
-			
+			margin-left 1em
 .location-icon
 	color orange_color
 	
 .concertsList
+	margin-bottom 1em
 	margin-top 1em
 	text-align center
 	.concert
-		width 65%
+		display inline-block
 		margin 0 auto
 		margin-bottom 3em
-		display inline-block
+		width 65%
 		.moreInfo
 			.cityName
+				float left
 				margin-top 0.75em
 				padding-left 0.5em
-				float left
 				text-align center
 		.concertImage
 			position relative
@@ -199,17 +189,77 @@ h1
 			img 
 				width 100%
 			.info
-				position absolute
-				bottom  0
-				left 0
-				right 0
 				background rgba(light_purple_color, 0.3)
-				height 25px
+				bottom  0
 				color white
+				height 25px
+				left 0
+				position absolute
+				right 0
 				text-align center
 				&:hover
 					background rgba(orange_color, 0.5)
-					
+
+.details
+	clear both
+	
+.headerDetails
+	border-bottom 1px dashed gray_color
+	border-top 1px dashed gray_color
+	margin 0 auto
+	margin-bottom 1.5em
+	padding-bottom 1em
+	padding-top 0.5em
+	text-align center
+	width 90%
+	.artistTag
+		display inline-block
+		height 3em
+		margin-left -1.4em
+		overflow hidden
+	.return
+		display inline-block
+		float left
+		font-size 1.5em
+		a
+			color purple_color
+			&:hover
+				color orange_color
+		
+.concertDetails
+	margin-bottom 1.5em
+	text-align center
+	.concertImageDetails
+		padding-bottom 1em
+		img
+			width 75%
+	.concertDescription
+		margin 0 auto
+		width 90%
+		p
+			text-align left
+			text-indent 1.5em
+		.moreInfo	
+			animation 1s fadeInTransition 1
+			background rgba(purple_color, 0.35)
+			border-radius 5px
+			margin-bottom 1em
+			margin-top 0.75em
+			padding 0.75em
+			text-align left
+			a
+				color purple_color
+				&:hover
+					color: blue_color
+			.infoTitle
+				font-weight bold
+	.maps
+		margin 0 auto
+		padding-bottom 0.5em
+		padding-top 0.5em
+		width 90%
+		
+
 @keyframes fadeInTransition
 	0% 
 		opacity 0
@@ -224,35 +274,64 @@ h1
 	100%
 		transform scale(1)
  
+@keyframes scaleTransition
+	0%
+		transform scale(0)
+	100%
+		transform scale(1)
+		
 					
 @media screen and (min-width:480px)
-	.concert
-		&:nth-child(even)
-			margin-right 1.5em
-			margin-left 1.5em
-			width 38%
-		&:nth-child(odd)
-			width 38%
-			margin-left 1.5em
-			margin-right 1.5em
 	.topMenu	
-		border-bottom 1px solid gray_color
 		background menu_color
+		border-bottom 1px solid gray_color
 		.logo
-			width 30%
 			display inline-block
+			margin-bottom 0.75em
 			margin-left 2em 
 			margin-top 1em
 			vertical-align middle
-			margin-bottom 0.75em
+			width 30%
 		.menu
-			width 60%
-			display inline-block
 			border-top none
+			display inline-block
 			vertical-align middle
+			width 60%
 	.banner
 		margin-top 1em
+		
+
+	.idx
+		.appDescription
+			h2
+				margin 0 auto
+				padding-bottom 1em
+				width 70%
+			.goConcertTime
+				width 30%
+		.appProcess
+			.steps
+				margin-left 1.5em
+				margin-right 1.5em
+				width 39%
+				
+	.concert
+		&:nth-child(even)
+			margin-left 1.5em
+			margin-right 1.5em
+			width 38%
+		&:nth-child(odd)
+			margin-left 1.5em
+			margin-right 1.5em
+			width 38%
+	
+
 @media screen and (min-width:650px)
+	.idx
+		.appProcess
+			.steps
+				width 30%
+				
 	.concertDetails
 		.concertImageDetails
 			display inline-block
@@ -264,21 +343,28 @@ h1
 			width 40%
 		.maps
 			width 90%
+
 @media screen and (min-width:1000px)
+	.idx
+		.appProcess
+			.steps
+				margin-left 1em
+				margin-right 1em
+				width 20%
 	.topMenu
 		.logo
-			width 20%
 			margin-left 3em
+			width 20%
 		.menu
-			width 70%
 			font-size 1.25em
+			width 70%
 				
 	.searchModule
 		text-align center
 		.description
 			display inline-block
-			vertical-align middle
 			text-align left
+			vertical-align middle
 			width 45%
 		.searchingOptions
 			display inline-block
@@ -287,13 +373,13 @@ h1
 			
 	.concert
 		&:nth-child(even)
-			margin-right 1em
 			margin-left 1em
+			margin-right 1em
 			width 25%
 		&:nth-child(odd)
-			width 25%
 			margin-left 1em
 			margin-right 1em
+			width 25%
 	.concertDetails
 		.concertImageDetails,
 		.concertDescription,

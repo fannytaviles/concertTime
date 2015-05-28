@@ -18,18 +18,20 @@
 	<body>
 		<header>
 			<div class="topMenu">
-				<div class="logo">
-					<figure class="image">
-						<img src="img/logo.png" alt="ConcertTime"/>
-					</figure>
-				</div>
+				<a href="#/index">
+					<div class="logo">
+						<figure class="image">
+							<img src="img/logo.png" alt="ConcertTime"/>
+						</figure>
+					</div>
+				</a>
 				<nav class="menu">
 					<ul class="list">
 						<li class="item">
-							<a href="#">Conciertos</a>
+							<a href="#/conciertos">Conciertos</a>
 						</li>
 						<li class="item">
-							<a href="#">Inicio</a>
+							<a href="#/index">Inicio</a>
 						</li>
 					</ul>
 				</nav>
@@ -48,24 +50,59 @@
 				</div>
 			</div>
 		</header>
-		<section id="searchModuleSection">
-		</section>
-		<section class="concertsList" id="concertListContainer">
-		</section>
-		<section class="details" id="concertDetails">
-		</section>
+		<section id="indexContainer"></section>
+		<section id="searchModuleSection"></section>
+		<section class="concertsList" id="concertListContainer"></section>
+		<section class="details" id="concertDetails"></section>
 		<footer>
 			<div class="footer-copyright">
 				<p>&copy; Copyright 2015 Concert Time</p>
 			</div>
 		</footer>
+		<script type="text/template" id="indexTemplate">
+			<div class="idx">
+				<div class="appDescription">
+					<h1>¡Hola, esto es Concert Time!</h1>
+					<h2>Aquí podrás encontrar todas las presentaciones que habrá próximamente en tu ciudad o los siguientes conciertos de tu artista favorito.</h2>
+					<a href="#/conciertos">
+						<div class="goConcertTime">Buscar ahora</div>
+					</a>
+				</div>
+				<div class="appProcess">
+					<div class="steps">
+						<figure class="imageStep">
+							<img src="img/mapMarker.png"/>
+						</figure>
+						<div class="stepInfo">
+							<span>Busca tu ciudad</span>
+						</div>
+					</div>
+					<div class="steps">
+						<figure class="imageStep">
+							<img src="img/people.png"/>
+						</figure>
+						<div class="stepInfo">
+							<span>Encuentra tu evento</span>
+						</div>
+					</div>
+					<div class="steps">
+						<figure class="imageStep">
+							<img src="img/ticket.png"/>
+						</figure>
+						<div class="stepInfo">
+							<span>Obtén la información</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
 		<script type="text/template" id="itemConcertTemplate">
 			<article class="concert">
 				<a href='#/concierto/<%= id %>'>
 					<figure class='concertImage'>
 						<img src='<%= img %>' alt='<%= artist %>'/>
 						<div class='info'>
-							<span class='icon-users'>&nbsp <%= artist %></span>
+							<span class='icon-users'><%= artist %></span>
 						</div>
 					</figure>
 				</a>
@@ -88,7 +125,7 @@
 					</div>
 					<div class="locationInfo">
 						<span class="icon-location2 location-icon"></span>
-						<span>&nbsp <%= city %></span>	
+						<span class="cityInfo"><%= city %></span>	
 					</div>
 				</div>
 				<div class="concertDetails">
@@ -162,78 +199,36 @@
 						 "img": "img/JuanSoloConcert.png",
 						 "artist": "Juan Solo",
 						 "city": "Distrito Federal",
-						 "description": "El cantautor mexicano Juan Solo llega al Teatro Metropólitan como parte de su gira #QuítameLoSolo, la cual, dio inicio en octubre pasado y lo ha llevado a recorrer distintos lugares de la República Mexicana para presentar su primer álbum “Ni Solo, Ni Mal Acompañado”.",
-						 "date": "Viernes, 12 de Junio de 2015",
-						 "hour": "20:00",
-						 "place": "Teatro Metropólitan",
-						 "urlInfo": "http://www.ticketmaster.com.mx/juan-solo-mexico-distrito-federal-12-06-2015/event/14004E887B08203C?artistid=2110616&majorcatid=10001&minorcatid=52",
-						 "tickets": "Ticketmaster",
-						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=Teatro%20Metrop%C3%B3litan%2C%20Centro%2C%20Ciudad%20de%20M%C3%A9xico%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "2",
 						 "img": "img/LosClaxonsConcert.jpg",
 						 "artist": "Los Claxons",
 						 "city": "San Luis Potosí",
-						 "description": "Esta banda originaria de Monterrey Nuevo León comenzó en el mundo de los centros nocturnos y de la escena musical universitaria. Su popularidad local logró llamar la atención de muchos seguidores que se fueron multiplicando de tocada en tocada.",
-						 "date": "Sábado, 13 de Junio de 2015",
-						 "hour": "21:00",
-						 "place": "Plaza de Toros",
-						 "urlInfo": "http://www.superboletos.com",
-						 "tickets": "Superboletos",
-						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=El%20Domo%20Centro%20de%20Espect%C3%A1culos%20de%20San%20Luis%20Potos%C3%AD%2C%20Sat%C3%A9lite%20Francisco%20I.%20Madero%202%20(23)%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "3",
 						 "img": "img/RoyAguadoConcert.jpg",
 						 "artist": "Roy Aguado",
 						 "city": "Guanajuato",
-						 "description": "Roy Aguado se presenta en León, Guanajuato en una session acústica con sus músicos, en el bar Sambala.",
-						 "date": "Sábado, 4 de Julio de 2015",
-						 "hour": "21:00",
-						 "place": "Bar Sambala",
-						 "urlInfo": "http://www.e-ticket.com",
-						 "tickets": "E-Ticket",
-						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=Le%C3%B3n%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "4",
 						 "img": "img/PaulinoMonroyConcert.jpg",
 						 "artist": "Paulino Monroy",
 						 "city": "Distrito Federal",
-						 "description": "Paulino Monroy ofrecerá un concierto el 31 de julio en El Lunario, donde presentará su disco de manera oficial.",
-						 "date": "Viernes, 31 de Julio de 2015",
-						 "hour": "21:00",
-						 "place": "Lunario del Auditorio Nacional",
-						 "urlInfo": "http://www.ticketmaster.com",
-						 "tickets": "Ticketmaster",
-						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=lunario%20auditorio%20nacional&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "5",
 						 "img": "img/JuanSoloConcert.png",
 						 "artist": "Juan Solo",
 						 "city": "San Luis Potosí",
-						 "description": "El cantautor mexicano Juan Solo llega al Teatro Metropólitan como parte de su gira #QuítameLoSolo, la cual, dio inicio en octubre pasado y lo ha llevado a recorrer distintos lugares de la República Mexicana para presentar su primer álbum “Ni Solo, Ni Mal Acompañado”.",
-						 "date": "Viernes, 10 de Julio de 2015",
-						 "hour": "20:00",
-						 "place": "El Domo",
-						 "urlInfo": "http://www.ticketmaster.com.mx/juan-solo-mexico-distrito-federal-12-06-2015/event/14004E887B08203C?artistid=2110616&majorcatid=10001&minorcatid=52",
-						 "tickets": "Ticketmaster",
-						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=El%20Domo%20Centro%20de%20Espect%C3%A1culos%20de%20San%20Luis%20Potos%C3%AD%2C%20Sat%C3%A9lite%20Francisco%20I.%20Madero%202%20(23)%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 						{
 						 "id": "6",
 						 "img": "img/LosClaxonsConcert.jpg",
 						 "artist": "Los Claxons",
 						 "city": "Distrito Federal",
-						 "description": "Esta banda originaria de Monterrey Nuevo León comenzó en el mundo de los centros nocturnos y de la escena musical universitaria. Su popularidad local logró llamar la atención de muchos seguidores que se fueron multiplicando de tocada en tocada.",
-						 "date": "Sábado, 17 de Julio de 2015",
-						 "hour": "21:00",
-						 "place": "José Cuervo Salón",
-						 "urlInfo": "http://www.superboletos.com",
-						 "tickets": "Superboletos",
-						 "mapSrc": "https://www.google.com/maps/embed/v1/place?q=Jos%C3%A9%20Cuervo%20Sal%C3%B3n%2C%20Granada%2C%20Ciudad%20de%20M%C3%A9xico%2C%20M%C3%A9xico&key=AIzaSyDpjyERd_4Tf6Fzo9pBEZV1fBKj3QH1avI"
 						},
 					]
 				};
